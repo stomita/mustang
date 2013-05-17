@@ -1,0 +1,17 @@
+{
+  "name": "mustang",
+  "version": "0.0.1",
+  "author": "Shinichi Tomita <shinichi.tomita@gmail.com>",
+  "license": "MIT",
+  "bin": {
+    "mustang": "lib/app.js"
+  },
+  "main": "lib/app",
+  "dependencies": {
+    "commander": "~1.1.1",
+    "mysql": "~2.0.0-alpha8",
+    "mustache": "~0.7.2",
+    "csv": "~0.3.0",
+    "iconv": "~2.0.6"
+  }
+}
