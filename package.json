@@ -6,7 +6,7 @@
   "bin": {
     "mustang": "lib/app.js"
   },
-  "main": "lib/app",
+  "main": "lib/mustang",
   "dependencies": {
     "commander": "~1.1.1",
     "mysql": "~2.0.0-alpha8",
@@ -15,5 +15,9 @@
     "iconv": "~2.0.6",
     "request": "~2.21.0",
     "underscore": "~1.4.4"
+  },
+  "devDependencies": {
+    "mocha": "~1.9.0",
+    "expect.js": "~0.2.0"
   }
 }
