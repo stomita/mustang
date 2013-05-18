@@ -1,6 +1,6 @@
 {
   "name": "mustang",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Shinichi Tomita <shinichi.tomita@gmail.com>",
   "license": "MIT",
   "bin": {
@@ -13,6 +13,7 @@
     "mustache": "~0.7.2",
     "csv": "~0.3.0",
     "iconv": "~2.0.6",
-    "request": "~2.21.0"
+    "request": "~2.21.0",
+    "underscore": "~1.4.4"
   }
 }
