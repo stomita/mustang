@@ -44,6 +44,7 @@ describe('mustang', function() {
       done();
     });
     mustang.on('error', function(err) {
+      console.error(err.stack);
       expect().fail();
     });
     mustang.render();
