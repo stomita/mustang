@@ -12,7 +12,7 @@ Mustang is a command-line tool to generate desired outputs from various data sou
 ## Install
 
 <pre>
-  $ npm install mustang
+  $ npm install -g mustang
 </pre>
 
 or
