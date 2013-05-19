@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "author": "Shinichi Tomita <shinichi.tomita@gmail.com>",
   "description": "A command-line tool for mustache template, generating outputs from various data sources",
-  "keywords": [ "mustache", "template", "cli" ],
+  "keywords": [
+    "mustache",
+    "template",
+    "cli"
+  ],
   "homepage": "http://github.com/stomita/mustang",
   "license": "MIT",
   "repository": {
@@ -18,16 +22,17 @@
     "test": "mocha"
   },
   "dependencies": {
+    "async": "0.2.x",
     "commander": "1.1.x",
-    "mysql": "2.0.0-alpha8",
-    "mustache": "0.7.x",
     "csv": "0.3.x",
     "iconv": "2.0.x",
+    "mysql": "2.0.0-alpha8",
+    "mustache": "0.7.x",
     "request": "2.21.x",
     "underscore": "1.4.x"
   },
   "devDependencies": {
-    "mocha": "1.9.x",
-    "expect.js": "0.2.x"
+    "expect.js": "0.2.x",
+    "mocha": "1.9.x"
   }
 }
