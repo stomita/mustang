@@ -103,29 +103,45 @@ If you want to output multiple files from each input records, add '-m' option an
   &lt;div&gt;1: Hello, World&lt;/div&gt;
 </pre>
 
-Mustang downloads the content directly from specified URL and use it as input source by using "-u" option.
+By using "-u" option, mustang downloads the content directly from specified URL and use it as input source.
 
 <pre>
   $ mustang -t template.mustache -u "https://webservice.example.org/search?q=London" -f json
 </pre>
 
-Also mustang can connnect to database and query records from database table/collection. Currently MySQL is supported for database.
+Also mustang can connnect to database and query records from database table/collection.
+Currently MySQL and MongoDB is supported for database.
 
 Following example shows how to fetch all records in "emp" table in MySQL database.
 
 <pre>
-  $ mustang -t template.mustache -d mysql://user:pass@localhost/database -c emp
+  $ mustang -t template.mustache -d mysql://user:pass@hostname/database -c emp
 </pre>
 
 You can directly pass a SQL to fetch records by "-q" option.
 
 <pre>
-  $ mustang -t template.mustache -d mysql://user:pass@localhost/database -q 'SELECT * FROM emp WHERE deptno = 1234'
+  $ mustang -t template.mustache -d mysql://user:pass@hostname/database -q 'SELECT * FROM emp WHERE deptno = 1234'
+</pre>
+
+Following example shows how to fetch all records in "users" collection in MongoDB.
+
+<pre>
+  $ mustang -t template.mustache -d mongodb://user:pass@hostname/database -c users
+</pre>
+
+You can also set URL-style query string in "-q" option to specify both querying collection and filter.
+
+<pre>
+  $ mustang -t template.mustache -d mongodb://user:pass@hostname/database -q 'users?type=internal&owner.name=john'
 </pre>
 
 
 ## Change History
 
+v0.1.1 (May 19, 2013):
+
+* Added support for MongoDB data source
 
 v0.1.0 (May 19, 2013):
 
