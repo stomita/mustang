@@ -59,8 +59,8 @@ You can add '-f' option to specify input file format explicitly.
   $ cat input.txt
   [
     { "NO": 1, "TITLE": "Hello, World" },
-    { "NO": 1, "TITLE": "Apple, Orange, and Banana" },
-    { "NO": 1, "TITLE": "Thank you!" }
+    { "NO": 2, "TITLE": "Apple, Orange, and Banana" },
+    { "NO": 3, "TITLE": "Thank you!" }
   ]
 
   $ mustang -t template.mustache -i input.txt -f json
