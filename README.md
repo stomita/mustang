@@ -1,6 +1,9 @@
-# Mustang - A command-line tool for mustache template, generating outputs from various data sources
+# Mustang 
 
 [![Build Status](https://secure.travis-ci.org/stomita/mustang.png)](http://travis-ci.org/stomita/mustang)
+
+A command-line tool for mustache template, generating outputs from various data sources
+
 
 ## Abstract
 
