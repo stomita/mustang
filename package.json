@@ -1,6 +1,6 @@
 {
   "name": "mustang",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Shinichi Tomita <shinichi.tomita@gmail.com>",
   "description": "A command-line tool for mustache template, generating outputs from various data sources",
   "keywords": [
