@@ -3,3 +3,7 @@ node_js:
   - 0.10
   - 0.12
   - io.js
+sudo: false
+cache:
+  directories:
+    - node-modules 
